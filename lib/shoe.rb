@@ -10,8 +10,9 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-    BRANDS << brand unless BRANDS.any? { |b| b == brand }  end
-    
+    BRANDS << brand unless BRANDS.any? { |b| b == brand }
+  end
+
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
